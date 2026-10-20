@@ -1,0 +1,21 @@
+kode|judul|penulis|penerbit|tahun|halaman|stok
+BK001|Laskar Pelangi|Andrea Hirata|Bentang Pustaka|2005|529|4
+BK002|Bumi|Tere Liye|Gramedia Pustaka Utama|2014|440|3
+BK003|Negeri 5 Menara|Ahmad Fuadi|Gramedia Pustaka Utama|2009|423|5
+BK004|Filosofi Teras|Henry Manampiring|Kompas|2018|346|2
+BK005|Laut Bercerita|Leila S Chudori|Kepustakaan Populer Gramedia|2017|379|3
+BK006|Pulang|Tere Liye|Republika|2015|400|2
+BK007|Ronggeng Dukuh Paruk|Ahmad Tohari|Gramedia Pustaka Utama|1982|408|1
+BK008|Cantik Itu Luka|Eka Kurniawan|Gramedia Pustaka Utama|2002|505|2
+BK009|Perahu Kertas|Dee Lestari|Bentang Pustaka|2009|444|4
+BK010|Manusia Indonesia|Mochtar Lubis|Yayasan Obor Indonesia|1977|128|1
+BK011|Sapiens|Yuval Noah Harari|Kepustakaan Populer Gramedia|2017|524|3
+BK012|Atomic Habits|James Clear|Gramedia Pustaka Utama|2019|352|2
+BK013|Dilan 1990|Pidi Baiq|Pastel Books|2014|332|5
+BK015|Tenggelamnya Kapal Van Der Wijck|Hamka|Balai Pustaka|1938|225|2
+BK016|Rantau 1 Muara|Ahmad Fuadi|Gramedia Pustaka Utama|2013|395|3
+BK017|Hujan|Tere Liye|Gramedia Pustaka Utama|2016|320|4
+BK018|Pulang Pergi|Tere Liye|Sabak Grip|2021|414|1
+BK019|Bumi Manusia|Pramoedya Ananta Toer|Hasta Mitra|1980|535|2
+BK020|Jejak Langkah|Pramoedya Ananta Toer|Hasta Mitra|1985|724|1
+BK021|Kode Duplikat|Penulis Kedua|Penerbit Contoh|2022|180|3

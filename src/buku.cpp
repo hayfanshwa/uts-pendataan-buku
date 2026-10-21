@@ -163,3 +163,15 @@ void tampilkanStatistik(const KumpulanBuku& koleksi) {
          << (double)total / koleksi.jumlah << endl;
     cout << "Stok min/max : " << mn << " / " << mx << endl;
 }
+void tampilkanInfoMemori(const KumpulanBuku& koleksi) {
+    cout << "(DetailBuku)   : " << sizeof(DetailBuku) << " byte\n";
+    cout << "(Buku)         : " << sizeof(Buku) << " byte\n";
+    cout << "(KumpulanBuku) : " << sizeof(KumpulanBuku) << " byte\n";
+    cout << "Array data (kapasitas " << KAPASITAS << ") : "
+         << sizeof(koleksi.data) << " byte\n";
+    cout << "Terpakai (" << koleksi.jumlah << " buku)   : "
+         << koleksi.jumlah * sizeof(Buku) << " byte\n";
+    cout << "Ukuran Buku awal: " << sizeof(Buku) << " byte\n";
+    cout << "Ukuran Buku alternatif: "
+     << sizeof(BukuAlternatif) << " byte\n";
+}

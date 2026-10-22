@@ -99,14 +99,14 @@ void cariBuku(const KumpulanBuku& koleksi) {
 void urutkanBuku(KumpulanBuku& koleksi) {
     for (int i = 0; i < koleksi.jumlah - 1; i++) {
         for (int j = 0; j < koleksi.jumlah - i - 1; j++) {
-            if (kecil(koleksi.data[j].judul) > kecil(koleksi.data[j + 1].judul)) {
+            if (kecil(koleksi.data[j].kode) > kecil(koleksi.data[j + 1].kode)) {
                 Buku temp = koleksi.data[j];
                 koleksi.data[j] = koleksi.data[j + 1];
                 koleksi.data[j + 1] = temp;
             }
         }
     }
-    cout << "Diurutkan berdasarkan judul.\n";
+    cout << "Diurutkan berdasarkan kode.\n";
 }
 
 void ubahBuku(KumpulanBuku& koleksi) {

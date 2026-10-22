@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     KumpulanBuku koleksi;
-    string namaBerkas = "buku.txt";
+    string namaBerkas = "data/buku.txt";
 
     bacaBuku(namaBerkas, koleksi);
     jalankanMenu(koleksi, namaBerkas);

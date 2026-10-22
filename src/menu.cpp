@@ -14,6 +14,7 @@ void jalankanMenu(KumpulanBuku& koleksi, string namaBerkas) {
              << "5. Ubah buku\n"
              << "6. Hapus buku\n"
              << "7. Statistik koleksi\n"
+             << "8. Info memori\n"
              << "0. Simpan dan keluar\n"
              << "Pilihan: ";
         cin >> pilihan;
@@ -44,6 +45,8 @@ void jalankanMenu(KumpulanBuku& koleksi, string namaBerkas) {
             simpanBuku(namaBerkas, koleksi);
         } else if (pilihan == 7) {
             tampilkanStatistik(koleksi);
+        } else if (pilihan == 8) {
+            tampilkanInfoMemori(koleksi);
         } else if (pilihan == 0) {
             simpanBuku(namaBerkas, koleksi);
             cout << "Data tersimpan. Sampai jumpa.\n";
@@ -52,3 +55,4 @@ void jalankanMenu(KumpulanBuku& koleksi, string namaBerkas) {
         }
     }
 }
+

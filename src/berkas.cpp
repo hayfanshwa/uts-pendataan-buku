@@ -36,20 +36,22 @@ void bacaBuku(string namaBerkas, KumpulanBuku& koleksi) {
     while (getline(f, baris)) {
         if (baris == "") continue;
         if (pisah(baris, k, 7) != 7) continue;  // jumlah kolom salah
-        if (k[0] == "kode") continue;           // baris header
+        if (k[0] == "kode") continue;   
+        int th, hal, st;
+        if (!kodeValid(k[0])) continue;
+        if (!parseAngka(k[4], th)  || th  < TAHUN_MIN || th  > TAHUN_MAX) continue;
+        if (!parseAngka(k[5], hal) || hal < HAL_MIN   || hal > HAL_MAX)   continue;
+        if (!parseAngka(k[6], st)  || st  < STOK_MIN  || st  > STOK_MAX)  continue;
 
         Buku b;
         b.kode = k[0];
         b.judul = k[1];
         b.detail.penulis = k[2];
         b.detail.penerbit = k[3];
-        try {
-            b.detail.tahun = stoi(k[4]);
-            b.detail.halaman = stoi(k[5]);
-            b.stok = stoi(k[6]);
-        } catch (...) {
-            continue;  // angka tidak valid
-        }
+        b.tahun = th;
+        b.halaman = hal;
+        b.stok = st;        
+
         if (cariIndeks(koleksi, b.kode) != -1) continue;  // kode duplikat
         if (koleksi.jumlah >= KAPASITAS) break;           // array penuh
 
@@ -67,9 +69,9 @@ void simpanBuku(string namaBerkas, const KumpulanBuku& koleksi) {
     }
     f << "kode|judul|penulis|penerbit|tahun|halaman|stok\n";
     for (int i = 0; i < koleksi.jumlah; i++) {
-        Buku b = koleksi.data[i];
+        const Buku& b = koleksi.data[i];
         f << b.kode << "|" << b.judul << "|" << b.detail.penulis << "|"
-          << b.detail.penerbit << "|" << b.detail.tahun << "|"
-          << b.detail.halaman << "|" << b.stok << "\n";
+          << b.detail.penerbit << "|" << b.tahun << "|"
+          << b.halaman << "|" << b.stok << "\n";
     }
 }
